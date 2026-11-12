@@ -1,0 +1,232 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\cp\\CafePos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\models\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\models\\common.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\ingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\ingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\itemstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\itemstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\ingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\ingredients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\itemstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\itemstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Invoice.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Invoice.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Invoice.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Invoice.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\Invoice.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:29:39.864Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Ingredients.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Ingredients.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Ingredients.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Ingredients.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\Ingredients.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAcwB0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:24:02.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ingredients.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Ingredients.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Ingredients.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Ingredients.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\Ingredients.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T16:23:59.518Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Items.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Items.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Items.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Items.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\Items.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T15:48:35.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Items.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Items.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Items.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Items.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\Items.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T15:48:31.009Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ItemStock.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\ItemStock.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\ItemStock.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\ItemStock.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\ItemStock.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T15:46:50.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemStock.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\ItemStock.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\ItemStock.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\ItemStock.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\ItemStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T15:46:48.172Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Categories.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Categories.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Categories.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Categories.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\Categories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T15:41:32.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Categories.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Categories.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Categories.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Categories.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\Categories.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T15:41:24.528Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Common.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\Models\\Common.cs",
+              "RelativeDocumentMoniker": "CafePos\\Models\\Common.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\Models\\Common.cs*",
+              "RelativeToolTip": "CafePos\\Models\\Common.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAMwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T14:48:55.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Units.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Units.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\Units.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T14:48:28.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Units.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Units.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\Units.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T14:48:26.381Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1529,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
