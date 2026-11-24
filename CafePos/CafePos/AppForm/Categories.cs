@@ -5,50 +5,42 @@ namespace CafePos.AppForm
 {
     public partial class Categories : UserControl
     {
-        public string Getid { get; set; } = string.Empty;
+        private string Getid { get; set; } = string.Empty;
+        public string SpName { get; set; }
         public Categories()
         {
             InitializeComponent();
         }
         private void Categories_Load(object sender, EventArgs e)
         {
-            buttonSave.Text = "Save";
+            SpName = "SpCategories";
             Common.ConfigureGrid(dataGridView);
             Reset();
+            Common.SetButtonName(buttonSave, buttonUpdate, buttonClear);
         }
         private async void Reset()
         {
             try
             {
-                DataTable dataTable = await Common.GetDataTable("SpCategories");
+                DataTable dataTable = await Common.GetDataTable(SpName);
                 dataGridView.DataSource = dataTable;
+
                 if (dataGridView.Columns.Contains("Id"))
-                {
                     dataGridView.Columns["Id"].Visible = false;
-                }
 
-
-                dataGridView.ClearSelection();
-                ClearSelection();
+                textBoxName.Text = "";
                 textBoxSearch.Text = "";
-                UpdateUnitCount(dataTable.Rows.Count);
+                Getid = "";
+                buttonSave.Enabled = true;
                 buttonUpdate.Enabled = false;
-
+                UpdateUnitCount(dataTable.Rows.Count);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        private void ClearSelection()
-        {
-            Getid = string.Empty;
-            textBoxSearch.Text = "";
-            textBoxName.Clear();
-            buttonUpdate.Enabled = false;
-            buttonSave.Enabled = true;
-            dataGridView.ClearSelection();
-        }
+
         private void UpdateUnitCount(int count)
         {
             labelCount.Text = count == 1 ? "1 Category" : $"{count} Categories";
@@ -57,55 +49,17 @@ namespace CafePos.AppForm
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                if (textBoxName.Text != string.Empty)
-                {
-                    var Name = StoredProcedure.CreateParameter("@Name", textBoxName.Text, "string");
-                    var Action = StoredProcedure.CreateParameter("@Action", "Save", "string");
-                    StoredProcedure.GetExecuteNonQuery("SpCategories", Name, Action);
-                    Reset();
-                }
-                else
-                {
-                    MessageBox.Show("Enter Item Name", "Warning", MessageBoxButtons.OK);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            GetExecuteNonQuery("Save");
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            ClearSelection();
-            textBoxName.Focus();
+            Reset();
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (textBoxName.Text != string.Empty)
-                {
-                    var id = StoredProcedure.CreateParameter("@id", Getid, "int");
-                    var Name = StoredProcedure.CreateParameter("@Name", textBoxName.Text, "string");
-                    var Action = StoredProcedure.CreateParameter("@Action", "Update", "string");
-                    StoredProcedure.GetExecuteNonQuery("SpCategories", Name, Action, id);
-
-                    Reset();
-                }
-                else
-                {
-                    MessageBox.Show("Enter Item Name", "Warning", MessageBoxButtons.OK);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            GetExecuteNonQuery("Update");
         }
 
         private void updateToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,37 +87,45 @@ namespace CafePos.AppForm
             if (MessageBox.Show("Delete this unit?", "Confirm Delete",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                try
-                {
-                    Getid = "";
-                    Getid = dataGridView.CurrentRow.Cells[0].Value.ToString();
-                    if (Getid != null)
-                    {
-                        var id = StoredProcedure.CreateParameter("@id", Getid, "int");
-                        var Action = StoredProcedure.CreateParameter("@Action", "Delete", "string");
-                        StoredProcedure.GetExecuteNonQuery("SpCategories", Action, id);
-                        Reset();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                Getid = dataGridView.CurrentRow.Cells[0].Value.ToString();
+                    GetExecuteNonQuery("Delete");
             }
         }
- 
+        private void GetExecuteNonQuery(string _Action)
+        {
+            try
+            {
+                var id = StoredProcedure.CreateParameter("@id", Getid, "int");
+                var Name = StoredProcedure.CreateParameter("@Name", textBoxName.Text, "string");
+                var Action = StoredProcedure.CreateParameter("@Action", _Action, "string");
+            
+                if (_Action == "Save" && textBoxName.Text != string.Empty)
+                    StoredProcedure.GetExecuteNonQuery(SpName, Action, Name);
+                
+                if (Getid != null )
+                {            
+                    if (_Action == "Update" && textBoxName.Text != string.Empty)
+                        StoredProcedure.GetExecuteNonQuery(SpName, Action, id, Name);
+                    else if (_Action == "Delete")
+                        StoredProcedure.GetExecuteNonQuery(SpName, Action, id);
+                }
+                Reset();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
             if (dataGridView.DataSource is not DataTable dataTable)
-            {
                 return;
-            }
 
             string searchText = textBoxSearch.Text.Trim().Replace("'", "''");
             if (string.IsNullOrEmpty(searchText))
-            {
                 dataTable.DefaultView.RowFilter = string.Empty;
-            }
+
             else
             {
                 string[] nameColumns = dataTable.Columns.Cast<DataColumn>()
@@ -179,6 +141,7 @@ namespace CafePos.AppForm
 
             UpdateUnitCount(dataTable.DefaultView.Count);
         }
+
         #region
         private void panelContent_Paint(object sender, PaintEventArgs e)
         {
@@ -211,4 +174,3 @@ namespace CafePos.AppForm
         #endregion
     }
 }
-

@@ -52,6 +52,7 @@ namespace CafePos.AppForm
             pURCHASEORDERSToolStripMenuItem = new ToolStripMenuItem();
             pURCHASEORDERLISTToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem5 = new ToolStripMenuItem();
+            eXPENSTypeToolStripMenuItem = new ToolStripMenuItem();
             eXPENSESToolStripMenuItem = new ToolStripMenuItem();
             toolStripMenuItem1 = new ToolStripMenuItem();
             iTEMSSTOCKToolStripMenuItem = new ToolStripMenuItem();
@@ -68,8 +69,8 @@ namespace CafePos.AppForm
             eXITToolStripMenuItem1 = new ToolStripMenuItem();
             panel1 = new Panel();
             panelHeader = new Panel();
-            labelTitle = new Label();
             labelSubtitle = new Label();
+            labelTitle = new Label();
             menuStrip1.SuspendLayout();
             panelHeader.SuspendLayout();
             SuspendLayout();
@@ -84,7 +85,7 @@ namespace CafePos.AppForm
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(12, 5, 12, 5);
             menuStrip1.RenderMode = ToolStripRenderMode.Professional;
-            menuStrip1.Size = new Size(1845, 46);
+            menuStrip1.Size = new Size(1862, 46);
             menuStrip1.TabIndex = 14;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -246,7 +247,7 @@ namespace CafePos.AppForm
             // 
             // toolStripMenuItem2
             // 
-            toolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { pURCHASEORDERSToolStripMenuItem, pURCHASEORDERLISTToolStripMenuItem, toolStripMenuItem5, eXPENSESToolStripMenuItem });
+            toolStripMenuItem2.DropDownItems.AddRange(new ToolStripItem[] { pURCHASEORDERSToolStripMenuItem, pURCHASEORDERLISTToolStripMenuItem, toolStripMenuItem5, eXPENSTypeToolStripMenuItem, eXPENSESToolStripMenuItem });
             toolStripMenuItem2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             toolStripMenuItem2.Image = (Image)resources.GetObject("toolStripMenuItem2.Image");
             toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
@@ -280,6 +281,13 @@ namespace CafePos.AppForm
             toolStripMenuItem5.Name = "toolStripMenuItem5";
             toolStripMenuItem5.Size = new Size(262, 38);
             toolStripMenuItem5.Text = "PURCHASE SUMMERY";
+            // 
+            // eXPENSTypeToolStripMenuItem
+            // 
+            eXPENSTypeToolStripMenuItem.Name = "eXPENSTypeToolStripMenuItem";
+            eXPENSTypeToolStripMenuItem.Size = new Size(262, 38);
+            eXPENSTypeToolStripMenuItem.Text = "EXPENS Type";
+            eXPENSTypeToolStripMenuItem.Click += eXPENSTypeToolStripMenuItem_Click;
             // 
             // eXPENSESToolStripMenuItem
             // 
@@ -391,7 +399,7 @@ namespace CafePos.AppForm
             bACKUPToolStripMenuItem.Image = (Image)resources.GetObject("bACKUPToolStripMenuItem.Image");
             bACKUPToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             bACKUPToolStripMenuItem.Name = "bACKUPToolStripMenuItem";
-            bACKUPToolStripMenuItem.Size = new Size(232, 38);
+            bACKUPToolStripMenuItem.Size = new Size(236, 38);
             bACKUPToolStripMenuItem.Text = "BACKUP";
             bACKUPToolStripMenuItem.Click += bACKUPToolStripMenuItem_Click_1;
             // 
@@ -400,7 +408,7 @@ namespace CafePos.AppForm
             aBOUTSOFTWAREToolStripMenuItem.Image = (Image)resources.GetObject("aBOUTSOFTWAREToolStripMenuItem.Image");
             aBOUTSOFTWAREToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             aBOUTSOFTWAREToolStripMenuItem.Name = "aBOUTSOFTWAREToolStripMenuItem";
-            aBOUTSOFTWAREToolStripMenuItem.Size = new Size(232, 38);
+            aBOUTSOFTWAREToolStripMenuItem.Size = new Size(236, 38);
             aBOUTSOFTWAREToolStripMenuItem.Text = "ABOUT SOFTWARE";
             aBOUTSOFTWAREToolStripMenuItem.Click += aBOUTSOFTWAREToolStripMenuItem_Click;
             // 
@@ -409,7 +417,7 @@ namespace CafePos.AppForm
             eXITToolStripMenuItem1.Image = (Image)resources.GetObject("eXITToolStripMenuItem1.Image");
             eXITToolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
             eXITToolStripMenuItem1.Name = "eXITToolStripMenuItem1";
-            eXITToolStripMenuItem1.Size = new Size(232, 38);
+            eXITToolStripMenuItem1.Size = new Size(236, 38);
             eXITToolStripMenuItem1.Text = "EXIT";
             eXITToolStripMenuItem1.Click += eXITToolStripMenuItem1_Click;
             // 
@@ -417,7 +425,7 @@ namespace CafePos.AppForm
             // 
             panel1.Location = new Point(1, 130);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1836, 728);
+            panel1.Size = new Size(1861, 743);
             panel1.TabIndex = 15;
             panel1.Paint += panel1_Paint_1;
             // 
@@ -429,8 +437,18 @@ namespace CafePos.AppForm
             panelHeader.Dock = DockStyle.Top;
             panelHeader.Location = new Point(0, 46);
             panelHeader.Name = "panelHeader";
-            panelHeader.Size = new Size(1845, 78);
+            panelHeader.Size = new Size(1862, 78);
             panelHeader.TabIndex = 16;
+            // 
+            // labelSubtitle
+            // 
+            labelSubtitle.AutoSize = true;
+            labelSubtitle.Font = new Font("Segoe UI", 9F);
+            labelSubtitle.ForeColor = Color.FromArgb(209, 213, 219);
+            labelSubtitle.Location = new Point(26, 53);
+            labelSubtitle.Name = "labelSubtitle";
+            labelSubtitle.Size = new Size(0, 20);
+            labelSubtitle.TabIndex = 2;
             // 
             // labelTitle
             // 
@@ -443,21 +461,11 @@ namespace CafePos.AppForm
             labelTitle.TabIndex = 0;
             labelTitle.Text = "Items (Menu)";
             // 
-            // labelSubtitle
-            // 
-            labelSubtitle.AutoSize = true;
-            labelSubtitle.Font = new Font("Segoe UI", 9F);
-            labelSubtitle.ForeColor = Color.FromArgb(209, 213, 219);
-            labelSubtitle.Location = new Point(26, 53);
-            labelSubtitle.Name = "labelSubtitle";
-            labelSubtitle.Size = new Size(0, 20);
-            labelSubtitle.TabIndex = 2;
-            // 
             // Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1845, 871);
+            ClientSize = new Size(1862, 871);
             Controls.Add(panelHeader);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
@@ -518,5 +526,6 @@ namespace CafePos.AppForm
         private Panel panelHeader;
         private Label labelTitle;
         private Label labelSubtitle;
+        private ToolStripMenuItem eXPENSTypeToolStripMenuItem;
     }
 }

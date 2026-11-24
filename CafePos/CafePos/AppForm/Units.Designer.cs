@@ -150,13 +150,14 @@
             panelGrid.Name = "panelGrid";
             panelGrid.Size = new Size(1518, 643);
             panelGrid.TabIndex = 1;
+            panelGrid.Paint += panelGrid_Paint;
             // 
             // labelUnits
             // 
             labelUnits.AutoSize = true;
             labelUnits.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             labelUnits.ForeColor = Color.FromArgb(31, 41, 55);
-            labelUnits.Location = new Point(18, 18);
+            labelUnits.Location = new Point(-1, 13);
             labelUnits.Name = "labelUnits";
             labelUnits.Size = new Size(105, 28);
             labelUnits.TabIndex = 0;

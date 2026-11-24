@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\cp\\CafePos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\salesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|d:\\cp\\cafepos\\cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A1361B80-BC78-4A58-B0D6-E1193F2C3AFD}|CafePos\\CafePos.csproj|solutionrelative:cafepos\\appform\\units.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Units.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Units.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\Units.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAMwFUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T18:35:56.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Units.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\Units.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\Units.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\Units.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T18:35:50.287Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SalesReport.cs",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\SalesReport.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\SalesReport.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\SalesReport.cs",
+              "RelativeToolTip": "CafePos\\AppForm\\SalesReport.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwFEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T18:35:42.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalesReport.cs [Design]",
+              "DocumentMoniker": "D:\\cp\\CafePos\\CafePos\\AppForm\\SalesReport.cs",
+              "RelativeDocumentMoniker": "CafePos\\AppForm\\SalesReport.cs",
+              "ToolTip": "D:\\cp\\CafePos\\CafePos\\AppForm\\SalesReport.cs [Design]",
+              "RelativeToolTip": "CafePos\\AppForm\\SalesReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-19T18:35:24.998Z",
+              "EditorCaption": " [Design]"
             }
           ]
         },

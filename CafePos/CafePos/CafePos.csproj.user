@@ -4,6 +4,12 @@
     <Compile Update="AppForm\Categories.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="AppForm\Expenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AppForm\ExpensType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="AppForm\Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -19,7 +25,25 @@
     <Compile Update="AppForm\ItemStock.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="AppForm\PurchaseOrderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AppForm\SalesReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AppForm\Supplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AppForm\SupplierLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AppForm\Table.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="AppForm\Units.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AppForm\Waiters.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Form1.cs">

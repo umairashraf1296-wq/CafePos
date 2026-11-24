@@ -22,6 +22,18 @@ namespace CafePos.Models
             dataGridView.BorderStyle = BorderStyle.None;
             dataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
         }
+        public static void dateTimePicker(DateTimePicker dateTimePicker)
+        {
+            dateTimePicker.CustomFormat = "yyyy-MM-dd";
+            dateTimePicker.Format = DateTimePickerFormat.Custom;
+        }
+
+        public static void SetButtonName(Button b1, Button b2, Button b3)
+        {
+            b1.Text = "Save";
+            b2.Text = "Update";
+            b3.Text = "Reset";
+        }
         public async static Task<DataTable> GetDataTable(string StoredProcedureName)
         {
             DataTable dataTable = new DataTable();

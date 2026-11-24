@@ -1,6 +1,6 @@
 ﻿using System.Data;
-using Microsoft.Data.SqlClient;
 using CafePos.Models;
+using Microsoft.Data.SqlClient;
 
 namespace CafePos.AppForm
 {
@@ -15,8 +15,24 @@ namespace CafePos.AppForm
         {
             GetButtonDynamically();
             Common.ConfigureGrid(dataGridView);
+            Common.ConfigureGrid(dataGridView2);
+            Reset();
         }
 
+        private void Reset()
+        {
+            try
+            {
+                dataGridView.Rows.Clear();
+                dataGridView.Refresh();
+                dataGridView2.Rows.Clear();
+                dataGridView2.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void GetButtonDynamically()
         {
             try
@@ -93,5 +109,83 @@ namespace CafePos.AppForm
         {
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //if (price.Text != string.Empty && Quality.Text != string.Empty && label4.Text != "label4" && label4.Text != string.Empty)
+            //    {
+            //        SaleOrderDetail items = new SaleOrderDetail(label4.Text, Convert.ToDecimal(price.Text),
+            //Convert.ToDecimal(Quality.Text), Convert.ToDecimal(Total.Text));
+            //        int n = dataGridView2.Rows.Add();
+            //        dataGridView2.Rows[n].Cells[0].Value = items.Name;
+            //        dataGridView2.Rows[n].Cells[1].Value = items.Price;
+            //        dataGridView2.Rows[n].Cells[2].Value = items.Quality;
+            //        dataGridView2.Rows[n].Cells[3].Value = items.Total;
+
+                    //        decimal ta = Convert.ToDecimal(TotalAmount.Text);
+                    //        decimal tt = Convert.ToDecimal(Total.Text);
+                    //        decimal totalSum = ta + tt;
+                    //        TotalAmount.Text = totalSum.ToString();
+                    //        NetAmount.Text = TotalAmount.Text;
+                    //        Reset();
+
+                    //      }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+          
+            // Reset();
+            // fillComboBox();
+            //this.TotalAmount.Text = "0";
+            //this.NetAmount.Text = "0";
+            textBoxdisper.Text = "0";
+            comboBox3.Enabled = true;
+            button16.Enabled = true;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+      //      this.Close();
+        }
+    }
+    public class SaleOrderDetail
+    {
+        public string Name { get; set; }
+
+        public decimal Price { get; set; }
+        public decimal Quality { get; set; }
+        public decimal Total { get; set; }
+
+        public SaleOrderDetail(string Name, decimal Price, decimal Quality, decimal Total)
+        {
+            this.Name = Name;
+            this.Price = Price;
+            this.Quality = Quality;
+            this.Total = Total;
+        }
     }
 }
+

@@ -51,7 +51,7 @@ namespace CafePos.AppForm
             labelCount.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             labelCount.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             labelCount.ForeColor = Color.FromArgb(107, 114, 128);
-            labelCount.Location = new Point(1040, 20);
+            labelCount.Location = new Point(1039, 16);
             labelCount.Name = "labelCount";
             labelCount.Size = new Size(165, 24);
             labelCount.TabIndex = 1;

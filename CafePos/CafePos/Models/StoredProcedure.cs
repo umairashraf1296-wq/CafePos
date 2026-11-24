@@ -148,9 +148,10 @@ namespace CafePos.Models
                     return GetValue;
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex )
             {
                 transaction.Rollback();
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return -1;
             }
 

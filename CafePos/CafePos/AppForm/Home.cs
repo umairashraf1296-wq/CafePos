@@ -10,7 +10,56 @@ namespace CafePos.AppForm
 
             // CheckExpiryDate();
         }
-        #region
+        #region User Control
+        private void sALESREPORTToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Monthly Sales (Report)";
+            this.labelSubtitle.Text = "View Monthly Sales (Report) and their details";
+            SalesReport i = new SalesReport();
+            addUserControl(i);
+        }
+        private void eXPENSTypeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Expense Types";
+            this.labelSubtitle.Text = "Manage expense types and their details";
+            ExpensType i = new ExpensType();
+            addUserControl(i);
+        }
+        private void pRODUCTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Items (Menu)";
+            Items i = new Items();
+            addUserControl(i);
+        }
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Tables";
+            Table i = new Table();
+            addUserControl(i);
+        }
+        private void uNITSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Units";
+            Units i = new Units();
+            addUserControl(i);
+        }
+        private void cATEGORIESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Categories";
+            Categories i = new Categories();
+            addUserControl(i);
+        }
+        private void iNVOICEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Invoice i = new Invoice();
+            addUserControl(i);
+        }
+        private void iNGREDIENTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.labelTitle.Text = "Item Ingredients";
+            Ingredients i = new Ingredients();
+            addUserControl(i);
+        }
         private void addUserControl(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -18,7 +67,24 @@ namespace CafePos.AppForm
             panel1.Controls.Add(uc);
             uc.BringToFront();
         }
+        private void eXITToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure  to close the application?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    Application.Exit();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+        #endregion
+
+        #region
         private void ConfigurePosShell()
         {
             Text = "Cafe POS";
@@ -147,34 +213,13 @@ namespace CafePos.AppForm
             public override Color MenuItemPressedGradientBegin => Color.FromArgb(55, 65, 81);
             public override Color MenuItemPressedGradientEnd => Color.FromArgb(55, 65, 81);
         }
-        private void uNITSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.labelTitle.Text = "Units";
-            Units i = new Units();
-            addUserControl(i);
-        }
-        private void cATEGORIESToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.labelTitle.Text = "Categories";
-            Categories i = new Categories();
-            addUserControl(i);
-        }
-        private void iNVOICEToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Invoice i = new Invoice();
-            addUserControl(i);
-        }
-        private void iNGREDIENTSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.labelTitle.Text = "Item Ingredients";
-            Ingredients i = new Ingredients();
-            addUserControl(i);
-        }
+
         private void UNITSToolStripMenuItem_Click(object sender, EventArgs e)
         {
         }
 
         #endregion
+
         //SqlConnection con = new SqlConnection(Global.ConnectionString());
 
         //private void CheckExpiryDate()
@@ -272,12 +317,6 @@ namespace CafePos.AppForm
             //sf.Show();
         }
 
-        private void pRODUCTSToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.labelTitle.Text = "Items (Menu)";
-            Items i = new Items();
-            addUserControl(i);
-        }
 
         private void eXITToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -326,29 +365,12 @@ namespace CafePos.AppForm
         }
 
 
-
-        private void eXITToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure  to close the application?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                try
-                {
-                    Application.Exit();
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
-
         private void aBOUTSOFTWAREToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
 
- 
+
 
         private void wAITERToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -377,13 +399,6 @@ namespace CafePos.AppForm
         {
             //     WaiterSalesSummery wss = new WaiterSalesSummery();
         }
-
-        private void sALESREPORTToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //SalesReport sr = new SalesReport();
-            //sr.Show();
-        }
-
         private void wAITERSALESToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             //WaiterSalesSummery wss = new WaiterSalesSummery();
@@ -392,14 +407,18 @@ namespace CafePos.AppForm
 
         private void wAITERSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Waiters w = new Waiters();
-            //w.Show();
+            this.labelTitle.Text = "Waiters";
+            this.labelSubtitle.Text = "Manage waiters and their details";
+            Waiters i = new Waiters();
+            addUserControl(i);
         }
 
         private void eXPENSESToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Expenses e1 = new Expenses();
-            //e1.Show();
+            this.labelTitle.Text = "Expenses";
+            this.labelSubtitle.Text = "Manage expenses and their details";
+            Expenses i = new Expenses();
+            addUserControl(i);
         }
 
         private void iTEMSSTOCKToolStripMenuItem_Click(object sender, EventArgs e)
@@ -407,13 +426,15 @@ namespace CafePos.AppForm
             this.labelTitle.Text = "Ingredients Stock";
             this.labelSubtitle.Text = "View current ingredient inventory and resolved quantities";
             ItemStock i = new ItemStock();
-            addUserControl(i); //its.Show();
+            addUserControl(i);
         }
 
         private void sUPPLIERSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Supplier s = new Supplier();
-            //s.Show();
+            this.labelTitle.Text = "Suppliers";
+            this.labelSubtitle.Text = "Manage suppliers and their details";
+            Supplier s = new Supplier();
+            addUserControl(s);
         }
 
         private void vENDORBALANCEToolStripMenuItem_Click(object sender, EventArgs e)
@@ -424,27 +445,22 @@ namespace CafePos.AppForm
 
         private void vENDORLEDGERToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //SupplierLedger sl = new SupplierLedger();
-            //sl.Show();
+            SupplierLedger sl = new SupplierLedger();
+            sl.Show();
         }
 
         private void pURCHASEORDERLISTToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //PurchaseOrderList pol = new PurchaseOrderList();
-            //pol.Show();
+            this.labelTitle.Text = "Purchase Order List";
+            this.labelSubtitle.Text = "View all purchase orders and their details";
+            PurchaseOrderList i = new PurchaseOrderList();
+            addUserControl(i);
         }
 
         private void pictureBox1_Click_2(object sender, EventArgs e)
         {
 
         }
-
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //Tables tab = new Tables();
-            //tab.Show();
-        }
-
         private void toolStripMenuItem8_Click_1(object sender, EventArgs e)
         {
             //DailyInvoiceReport dir = new DailyInvoiceReport();
@@ -465,5 +481,7 @@ namespace CafePos.AppForm
         {
 
         }
+
+
     }
 }
